@@ -1,5 +1,23 @@
--- Loading data silver layer table 'silver.crm_cust_info'
--- with normalize & remove duplicates
+
+/*
+=========================================================
+Stored Procedure: Load Silver Layer (Bronze -> Layer)
+=========================================================
+Script Purpose:
+    This stored procedure performs the ETL(Extraction, Transformation and Loading) process 
+	to populate the 'silver' schema tables from the 'bronze' schema   
+    It performs the following actions:
+    - Truncates Silver Tables
+    - Insert Transformed and Cleansed data from Bronze into Silver tables.
+
+Parameters:
+    None. 
+    This stored procedure does not accept any parameter or return any values.
+
+Usage Example:
+    EXEC silver.load_silver;
+=========================================================
+*/
 CREATE OR ALTER PROCEDURE silver.load_silver AS
 BEGIN
 DECLARE @start_time DATETIME, @end_time DATETIME, 
