@@ -1,7 +1,7 @@
 
 /*
 =========================================================
-Stored Procedure: Load Silver Layer (Bronze -> Layer)
+Stored Procedure: Load Silver Layer (Bronze -> Silver)
 =========================================================
 Script Purpose:
     This stored procedure performs the ETL(Extraction, Transformation and Loading) process 
